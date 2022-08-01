@@ -11,4 +11,12 @@ public interface IUserService {
      * */
     void reg(User user);
 
+    /**
+     * 用户登陆功能
+     * @param username 用户名
+     * @param password 密码
+     * @return 当前匹配的用户数据，如果没有则返回null
+     * */
+    User login(String username, String password);
+
 }
